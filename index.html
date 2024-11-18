@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otantik Kafe </title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="loading-screen">
+        <div>
+            <div class="loader"></div>
+            <h1>Otantik Kafe</h1>
+            <h1>Hoşgeldiniz...</h1>
+              
+        </div>
+    </div>
+    <header>
+        <h1 style="color: turquoise;"> ♠ ♠ ♠  Otantik Kafe ♠ ♠ ♠  </h1>
+    </header>
+    <footer>
+        <p style="text-align: center; margin: 20px 0; font-size: 14px; color: #555;">
+          <small style="color:  #fdfdfd;">Developed by : Ayberk AYDIN</small>  
+        </p>
+    </footer>
+
+    <div class="container">
+        <div class="buttons">
+            <button onclick="filterProducts('hepsi')">Tüm Ürünler</button>
+            <button onclick="filterProducts('kafe')">Kahveler</button>
+            <button onclick="filterProducts('tatli')">Tatlılar</button>
+            <button onclick="filterProducts('icecek')">İçecekler</button>
+            <button onclick="showMap()">KONUM </button>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Ürün ismine göre ara..." onkeyup="filterByName(this.value)">
+        </div>
+
+        <div id="product-list">
+            <div class="product kafe" data-name="latte">
+                <img src="latte.jpg" alt="Latte">
+                <h3 style="color: rgb(159, 34, 0)">Latte</h3>
+                <p>Kremalı ve sütlü kahve.</p>
+                <b>
+                    <p style="color: red;">20₺</p>
+                </b>
+            </div>
+            <div class="product kafe" data-name="espresso">
+                <img src="espresso.jpg" alt="Espresso">
+                <h3 style="color: rgb(159, 34, 0)">Espresso</h3>
+                <p>Güçlü ve saf kahve tadı.</p>
+                <b>
+                    <p style="color: red;">20₺</p>
+                </b>
+            </div>
+            <div class="product tatli" data-name="cheesecake">
+                <img src="cheesecake.jpg" alt="Cheesecake">
+                <h3 style="color: rgb(159, 34, 0)">Cheesecake</h3>
+                <p>Kremalı ve lezzetli tatlı.</p>
+                <b>
+                    <p style="color: red;">20₺</p>
+                </b>
+            </div>
+            <div class="product tatli" data-name="cheesecake">
+                <img src="aleyna.jpg" alt="Cheesecake">
+                <h3 style="color: rgb(159, 34, 0)">Cheesecake</h3>
+                <p>Kremalı ve lezzetli tatlı.</p>
+                <b>
+                    <p style="color: red;">20₺</p>
+                </b>
+            </div>
+            <div class="product tatli" data-name="cheesecake">
+                <img src="sik.jpg" alt="Cheesecake">
+                <h3 style="color: rgb(159, 34, 0)">Cheesecake</h3>
+                <p>Kremalı ve lezzetli tatlı.</p>
+                <b>
+                    <p style="color: red;">20₺</p>
+                </b>
+            </div>
+            <div class="product icecek" data-name="limonata">
+                <img src="limonata.jpg" alt="Limonata">
+                <h3 style="color: rgb(159, 34, 0)">Limonata</h3>
+                <b><p style="color: #ffffff;">Ferahlık veren soğuk içecek.</p> </b> 
+                <b>
+                    <p style="color: red;">20₺</p>
+                </b>
+            </div>
+            <div class="product tatli" data-name="brownie">
+                <img src="brownie.jpg" alt="Brownie">
+                <h3 style="color: rgb(159, 34, 0)">Brownie</h3>
+                <p>Çikolatalı ve yoğun tatlı.</p>
+                <b>
+                    <p style="color: red;">20₺</p>
+                </b>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- İletişim Butonları Yan Yana -->
+    <div class="contact-buttons">
+        <!-- WhatsApp İletişim Butonu -->
+        <a href="https://wa.me/905319187782" target="_blank">
+            <img src="WhatsApp_Logo_2019.jpg" alt="WhatsApp">
+            Mesaj Gönder
+        </a>
+
+        <!-- Telefon Rehberine Yönlendirme Butonu -->
+        <a href="tel:+905319187782">
+            <img src="telefon.jpg" alt="Telefon">
+            Bize ulaşın
+        </a>
+        
+    </div>
+
+  
+
+    <script>
+    
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>
